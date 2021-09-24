@@ -1,0 +1,699 @@
+@charset "utf-8";
+
+/* 380px Mobile strat --------------------------- */
+#wrap{
+  min-width: 375px;
+  margin: 0 auto;
+}
+header{
+  padding: 10px 20px;
+  background-color: #E60012;
+}
+.hInner{
+  position: relative;
+  height: 50px;
+}
+h1 .logoR, .company, nav, .search{
+  display: none;
+}
+h1{
+  position: absolute; top: 50%; left: 0; transform: translateY(-50%);
+}
+h1 img{
+  height: 50px;
+}
+button{
+  position: absolute; top: 50%; right: 0; transform: translateY(-50%);
+}
+button span{
+  display: block;
+  width: 33px; height: 3px;
+  background-color: #fff;
+  margin: 7px 0;
+}
+button::before, button::after{
+  content: '';
+  display: block;
+  width: 33px; height: 3px;
+  background-color: #fff;
+}
+/* header End-------------- */
+
+
+.swiper {
+  width: 100%;
+  height:200px;
+}
+
+.swiper-slide {
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 80%;
+}
+.mySwiper .swiper-slide:first-child{
+  background: url(../img/slideBg.png) no-repeat;
+}
+.mySwiper .swiper-slide:nth-child(2){
+  background: url(../img/slideBg2.png);
+}
+
+
+
+
+.con1{
+  position: relative;
+}
+.tit1{
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.slide_wrapper{
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.slide_wrapper .swiper-button-next{right: -35px;}
+.slide_wrapper .swiper-button-prev{left: -35px;}
+
+.slides{
+  position: absolute; top: 0; left: 0;
+  transition: left 0.5s ease-out;
+}
+.slides li{
+  float: left;
+}
+
+.slides li:last-child{
+  margin-right: 0;
+}
+.controls{
+  position: absolute; top: 50%; left: 2px;
+}
+.controls span img{
+  display: block;
+  width: 20px;
+}
+
+.controls span.next img{
+  position: absolute; right: -350px; top: 0;
+}
+
+
+
+
+.con2{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.tit2{
+  height: 40px;
+  margin-bottom: 35px;
+}
+.products li{
+  height: 230px;
+  position: relative;
+}
+.products li img{
+  height: 120px;
+}
+.products .item1 li:first-child{
+  background: url(../img/product01_bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.products .item1 li:first-child img{
+  position: absolute; top: 30%; right: 10%;
+}
+.products .item1 li:last-child{
+  background: url(../img/product02_bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.products .item1 li:last-child img{
+  position: absolute; top: 15%; left: 10%;
+  height: 170px;
+}
+.products .item2 li:first-child{
+  background: url(../img/product03_bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.products .item2 li:first-child img{
+  position: absolute; top: 15%; right: 10%;
+  height: 230px;
+}
+.products .item2 li:last-child{
+  background: url(../img/product04_bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.products .item2 li:last-child img{
+  position: absolute; top: 15%; left: 23%;
+  height: 170px;
+}
+.txtB{
+  width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute; top: 0; left: 0;
+  display: none;
+}
+.txtB .boxW1{
+  transform: translate(80px, 100px);
+}
+.txtB .boxW2{
+  transform: translate(-80px, 100px);
+}
+.boxW1 .name1, .boxW2 .name1{
+  color: #E60012; font-weight: 800; font-size: 17px;
+  margin-bottom: 5px;
+}
+.boxW1 .name2, .boxW2 .name2{
+  font-size: 12px; font-weight: bold;
+}
+.products li:hover .txtB{
+  display: block;
+}
+
+
+.con1{
+  text-align: center;
+  margin: 50px 0;
+}
+
+.con3{
+  background-color: #F1F1F0;
+  padding: 70px 0; 
+}
+.con3 .sInner{
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+.con3 .sInner ul li{
+  margin-bottom: 50px;
+}
+.con3 .sInner .firstUl{
+  display: none;
+}
+.tit3{
+  height: 40px;
+  margin-bottom: 35px;
+  margin-top: 40px;
+}
+
+.milkIcon{
+  float: left;
+  width: calc(25% - 10px);
+  margin-right: 10px;
+}
+.floatB{
+  float: right;
+  width: 75%;
+  text-align: left; font-weight: bold;
+  margin-top: 5px;
+}
+.floatB p{
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.floatB p:first-child{
+  color: #116C30; font-weight: 600; font-size: 17px;
+}
+.floatB p:first-child a{
+  font-weight: bold; color: #116C30; font-size: 11px; text-decoration: underline;
+}
+.floatB p:nth-child(2)::before, .floatB p:nth-child(3)::before{
+  content: ''; display: block;
+  width: 20px; height: 2px;
+  background-color: #ccc;
+  margin-top: 8px;
+}
+
+
+footer .fInner{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.tit4{
+  height: 40px;
+  margin-bottom: 35px;
+  margin-top: 40px;
+}
+.snsB{
+  margin-bottom: 60px;
+}
+.snsB a{
+  display: inline-block;
+  margin-right: 7px;
+}
+.snsB a:last-child{
+  margin-right: 0;
+}
+.snsB a img{
+  height: 40px;
+} 
+.contectB{
+  display: none;
+}
+.btnT{
+  display: none;
+}
+.end{
+  width: 100%;
+  background: #000;
+}
+.end .fInner{
+  text-align: left;
+  padding: 10px;
+}
+.end .fInner li{
+  float: left;
+  font-size: 9px; color: #fff;
+  width: 80%;
+}
+.end .fInner li a{
+  font-size: 9px; color: #fff;
+}
+.end .fInner li.floatR{
+  float: right;
+  width: 20%;
+  text-align: right;
+}
+.end .fInner li.floatR img{
+  height: 40px;
+}
+
+
+
+/* 1200px Tablet strat --------------------------- */
+@media screen and (min-width: 980px){
+  #wrap{
+    margin: 0 auto;
+  }
+  h1 .logoR, .company, nav, .search{
+    display: block;
+  }
+  h1 .logoW, button{
+    display: none;
+  }
+  header{
+    padding: 30px 0;
+    background-color: #fff;
+    position: relative;
+  }
+  .hInner{
+    height: 180px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  h1{
+    left: 50%; top: 0; transform: translateY(0);transform: translateX(-50%);
+  }
+  h1 img{
+    height: 120px;
+  }
+  .company{
+    margin-left: 10px;
+  }
+  .company a{
+    font-size: 17px;
+    font-weight: bold;
+  }
+  nav{
+    position: absolute; bottom: 0; left: 0%; 
+    width: 100%;
+    margin: 0 auto;
+    background-color: #E60012;
+  }
+  nav ul{
+    padding: 13px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+  }
+  nav ul li a{
+   color: #fff; font-weight: bold;
+  }
+  .search{
+    position: absolute; top: 0; right: 10px;
+  }
+  .search input{
+    height: 30px; width: 250px;
+    border-radius: 15px;
+  }
+
+  /* header End-------------- */
+
+  .tit1{
+    height: 60px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  
+  }
+  .sInner .con1 {
+    margin: 95px 0;
+  }
+  .swiper {
+    width: 100%;
+    height: 400px;
+  }
+  .swiper.mySwiper2{
+    height: 250px;
+  }
+
+  .swiper-slide{
+    width: 27%; height: 230px;
+  }
+  .slide_wrapper{
+    width: 90%;
+  }
+  .swiper-slide iframe{
+    height: 100%;
+    width: 100%;
+  }
+  .controls span.next img{
+    right: -950px;
+  }
+
+  .tit2 {
+    height: 60px;
+    margin-bottom: 60px;
+    margin-top: 90px;
+  }
+  .products li{
+    float: left;
+    width: calc(100% / 3); height: 400px;
+    margin: 0 auto;
+  }
+  .products .item1 li:last-child{
+    display: none;
+  }
+  .products .item1 li:first-child img{
+    top: 15%; right: 7%;
+    height: 110px;
+  }
+  .products .item2 li:first-child img{
+    top: 7%; right: 10%;
+    height: 210px;
+  }
+  .products .item2 li:last-child img{
+    top: 7%; left: 23%;
+    height: 150px;
+  }
+  .boxW1 .name1, .boxW2 .name1{
+    font-size: 25px;
+  }
+  .boxW1 .name2, .boxW2 .name2{
+    font-size: 16px;
+  }
+
+
+  .con3{
+    background-color: #F1F1F0;
+    padding: 100px; 
+  }
+  .con3 .sInner{
+    padding: 0 40px;
+    border-radius: 100px;
+  }
+  .tit3 {
+    height: 60px;
+    margin-bottom: 60px;
+  }
+  .con3 .sInner .firstUl{
+    display: block;
+    
+  }
+  .con3 .sInner .firstUl li{
+    float: left;
+    width: 50%;
+  }
+  .con3 .sInner .secondUl{
+    padding-top: 60px;
+    border-top: dashed 2px #ccc ;
+  }
+  .con3 .sInner .secondUl li{
+    float: left;
+    width: 50%;
+  }
+  .floatB p{
+    font-size: 16px;
+    
+  }
+  .floatB p:first-child{
+    font-size: 25px;
+  }
+  .floatB p:first-child a{
+    font-size: 17px;
+  }
+  .floatB p:nth-child(2)::before, .floatB p:nth-child(3)::before{
+    width: 35px; height: 4px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .milkIcon{
+    padding-top: 10px;
+  }
+  .con3 ul li:first-child{
+    padding-right: 20px;
+  }
+
+  footer .fInner{
+    max-width: 1980px;
+  }
+  .tit4{
+    height: 60px;
+    margin-top: 70px;
+  }
+  .snsB a{
+    margin-right: 20px;
+  }
+  .snsB a img{
+    height: 80px;
+  } 
+  .contectB{
+    display: block;
+    background-color: #E60012;
+    width: 90%; height: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 25px;
+  }
+  .contectB p{
+    font-size: 35px; color: #fff; font-weight: 800; font-style: italic;
+    text-align: center;
+  }
+  .btnT{
+    display: block;
+    height: 60px;
+    margin: 70px auto;
+  }
+  .end .fInner{
+    padding: 30px;
+  }
+  .end .fInner li{
+    font-size: 16px;
+  }
+  .end .fInner li a{
+    font-size: 16px;
+  }
+  .end .fInner li.floatR img{
+    height: 70px;
+  }
+}
+
+
+/* 1920px Desktop strat --------------------------- */
+@media screen and (min-width: 1200px){
+  .hInner{
+    margin: 0 auto;
+    height: 230px;
+  }
+  h1 img{
+    height: 150px;
+  }
+  nav ul{
+    max-width: 1200px;
+    padding: 17px 0;
+    margin: 0 auto;
+  }
+  nav ul li a{
+    font-size: 23px;
+  }
+  .search input{
+    height: 28px; width: 250px;
+    border-radius: 20px;
+  }
+  .slider{
+    height: 800px;
+  }
+  /* header End-------------- */
+
+  .swiper{
+    height: 550px;
+  }
+  .sInner{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .tit1{
+    height: 75px;
+    margin-top: 90px;
+  }
+
+  .controls span.next img{
+    right: -1150px;
+  }
+
+  .con2{
+    margin-bottom: 100px;
+  }
+  .con2::after{
+    content: ''; display: block; clear: both;
+  }
+  .con2 .tit2{
+    height: 75px;
+    margin-top: 100px;
+    margin-bottom: 90px;
+  }
+  .products{
+    margin: 0 30px;
+  }
+  .products li{
+    float: none;
+    width: calc(100% / 2); height: 350px;
+    margin: 0 auto;
+  }
+  .products .item1 li{
+    float: left;
+  }
+  .products .item2 li{
+    float: left;
+  }
+  .products .item1 li:last-child{
+    display: block;
+  }
+  .products .item1 li:first-child img{
+    top: 25%; right: 7%;
+    height: 200px;
+  }
+  .products .item1 li:last-child img{
+    top: 10%; left: 17%;
+    height: 280px;
+  }
+  .products .item2 li:first-child img{
+    top: 5%; right: 15%;
+    height: 370px
+  }
+  .products .item2 li:last-child img{
+    top: 20%; left: 24%;
+    height: 230px;
+  }
+  .txtB .boxW1{
+    transform: translate(0px, 150px);
+  }
+  .txtB .boxW2{
+    transform: translate(5%, 150%);
+  }
+  .boxW1 .name1, .boxW2 .name1{
+    font-size: 35px;
+  }
+  .boxW1 .name2, .boxW2 .name2{
+    font-size: 23px;
+  }
+  .con3 .tit3{
+    height: 75px;
+    margin-top: 65px;
+    margin-bottom: 70px;
+  }
+  .con3 .sInner ul li{
+    margin-bottom: 75px;
+  }
+  .floatB{
+    margin-top: 20px;
+  }
+  .floatB p{
+    font-size: 17px; font-weight: 600;
+  }
+  .floatB p:first-child{
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .floatB p:first-child a{
+    font-size: 17px;
+  }
+  .floatB p:nth-child(2)::before, .floatB p:nth-child(3)::before{
+    width: 45px; height: 4px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .tit4{
+    height: 75px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+  .snsB a{
+    margin-right: 40px;
+  }
+  .snsB a img{
+    height: 80px;
+  } 
+  .contectB{
+    width: 90%; height: 70px;
+    margin-top: 40px;
+    border-radius: 0 35px 35px 0;
+    margin-left: 0;
+  }
+  .contectB p{
+    font-size: 40px;
+    text-align: right;
+    padding-right: 80px;
+    line-height: 70px;
+  }
+  .btnT{
+    display: block;
+    height: 80px;
+    margin: 120px auto;
+  }
+  .end .fInner{
+    padding: 50px;
+  }
+  .end .fInner li{
+    font-size: 20px;
+  }
+  .end .fInner li a{
+    font-size: 20px;
+  }
+  .end .fInner li.floatR img{
+    height: 100px;
+  }
+}
+
+
